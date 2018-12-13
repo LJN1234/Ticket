@@ -1,0 +1,92 @@
+@import './common.scss';
+@function rem($val) {
+    @return $val/37.5 + rem
+}
+
+.mineHeader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: rem(375);
+    height: rem(50);
+    line-height:  rem(50);  
+    background: #4271e0;
+    .leftIcon{
+        float: left; 
+        width: rem(50);
+        height: rem(50);
+        font-size: rem(18);
+        text-align: center;
+        color:#a2b9f0;  
+    }
+    .headerTitle{
+        width: rem(335);
+        color:#fff;
+        text-align: center;
+    }
+}
+.login{
+    width: rem(375);
+    padding-top: rem(60);
+    background: #fff;
+    .myLogin{
+        width: rem(375);
+        text-align: center;
+        input{
+            width: rem(335);
+            height: rem(40);
+            line-height: rem(40);
+            margin-top: rem(10);
+            border-radius: rem(5);
+        }
+        .loginCon{
+            input{
+                padding-left: rem(10);
+                background: #eee;
+            }
+            p{
+                width: rem(335);
+                height: rem(40);
+                line-height: rem(40);
+                text-align: left;
+                margin: rem(20) rem(20) rem(5) rem(20);
+            }
+        }
+        .loginBtn{
+            input{
+                background: #fff;
+                color: #fff;
+                font-size: 16px;
+                border: 1px solid #FF5D5D;
+                color: #FF5D5D;
+            }
+            input:nth-child(1){
+                background: #FF5D5D;
+                color: #fff;
+            }
+        }
+    }
+    .otherLogin{
+        width: rem(335);
+        text-align: center;
+        margin-top: rem(40);
+        h4,p{
+            width: rem(335);
+            height: rem(50);
+            line-height: rem(50);
+            text-align: center; 
+        }
+        p{
+            display: flex;
+            justify-content: center;
+            span{
+                display: block;
+                width: rem(50);
+                height: rem(50);
+                line-height: rem(50);
+                font-size: 24px;
+            }
+        }
+    }
+}

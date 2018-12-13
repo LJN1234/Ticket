@@ -1,0 +1,124 @@
+
+@import './common.scss';
+@function rem($val) {
+    @return $val/37.5 + rem
+}  
+    .detailHeader{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        width: rem(375);
+        height: rem(50);
+        line-height:  rem(50);  
+        font-size: rem(18);
+        background: #4271e0;
+        display: flex;
+        justify-content: space-between;
+        .iconNav,.iconLeft,.iconShare{
+            float: left; 
+            width: rem(40);
+            height: rem(40);
+            text-align: center;
+            color:#a2b9f0;  
+        }
+        .headerTitle{
+            width: rem(150);
+            color:#fff;
+            span{
+                font-size: rem(16); 
+                margin-left: rem(5); 
+            }
+        }
+    }
+
+    .detailCon{
+        margin: rem(50) 0;
+        overflow: auto;
+        .list{
+            width: 100%;;
+            // height: rem(160);
+            padding: rem(10) rem(10);
+            display: flex;
+            justify-content: space-between;
+            background: #fff;
+            img{
+                width: rem(90);
+                height: rem(128);
+            }
+            .msg{
+                width: rem(255);
+                // height: rem(126);
+                margin-left: rem(10);
+                font-size: rem(14);
+                color: #939393;
+                h3{
+                    font-size: rem(16);
+                    color: #424959;
+                    margin-bottom: rem(3);
+                }
+                p{
+                    line-height: rem(21);
+                }
+                .fare{
+                    color:red;
+                }
+            }
+        }
+        .info{
+            width: 100%;
+            margin-top: rem(5);
+            background: #fff;
+            padding: rem(0) rem(18);
+            h2{
+                width: 100%;
+                height: rem(60);
+                line-height: rem(60);
+                font-size: rem(24);
+                text-align: center; 
+            }
+            .infoCon{
+                p{
+                    img{
+                        width: rem(339);
+                        height: rem(166);  
+                    }
+                }
+            }
+            .callUs{
+                width: 100%;
+                height: rem(60);
+                line-height: rem(60);
+                border-radius: rem(5);
+                background: #efefef;
+                text-align: center;
+                margin: rem(15) 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                p{
+                    width: 100%;
+                    height: rem(22);
+                    line-height: rem(22);
+                    color: #666;
+                    font-size: rem(14);
+                    
+                }
+            }
+        }
+    }
+
+    .detailFooter{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        width: rem(375);
+        height: rem(50);
+        line-height: rem(50);
+        background: #4271e0;
+        font-size: rem(18);
+        color: #fff;
+        text-align: center;
+
+    }

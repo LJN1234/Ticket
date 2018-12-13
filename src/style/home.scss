@@ -1,0 +1,161 @@
+
+@import './common.scss';
+@function rem($val) {
+    @return $val/37.5 + rem
+}
+
+.home{
+    width: rem(277);
+    height: 100%;
+    background-color: #ffffff;
+    .nav{
+        position: flex;
+        top:0;
+        left: 0;
+        z-index: -1000;
+        width: rem(277);
+        background-color: #ffffff;
+        color: #424959;
+        border-color: #dddddd;
+        font-size: 15px;
+        .navList{
+            background-color: #F7F7F7;
+            .my-accordion{
+                .pad{
+                    width: 100%;
+                    line-height: rem(45);
+                    padding-left: rem(54);
+                    border-bottom: 1px solid #f3f3f3;
+                    .my-list{
+                        .every-list{
+                            width: 100%;
+                            height: rem(40);
+                            line-height: rem(40);
+                            border-bottom: 1px solid red;
+                        }
+                    }
+                }  
+            }
+        }
+        .navBtn{
+            width: rem(247);
+            height: 100%;
+            margin: 0 rem(25);
+            text-align: center;
+            button{
+                width: 90%;
+                border: 1px solid #4271E0;
+                display: block;
+                padding: rem(10) 0;
+                text-align: center;
+                border-radius: 5px;
+                background-color: #ffffff;
+            }
+        }
+    }
+    .content{
+        position: absolute;
+        top:0;
+        left: 0;
+        z-index: 999;
+        background-color: #F7F7F7;
+        .header{
+            width: rem(375);
+            height: rem(50);
+            line-height:  rem(50);
+            font-size: rem(20);
+            background: #4271e0;
+            display: flex;
+            justify-content: space-between;
+            .nav-icon,.search-icon{ 
+                width: rem(40);
+                height: rem(40);
+                text-align: center;
+                color:#a2b9f0;  
+            }
+            .header-title{
+                color:#fff;
+                span{
+                    font-size: rem(16); 
+                    margin-left: rem(5); 
+                }
+            }
+        }
+        
+        // 轮播图
+        .banner{
+            width: rem(375);
+            height: rem(207);
+            a{
+                width: rem(375);
+                height: rem(207);
+                img{
+                    width: rem(375);
+                    height: rem(207);
+                }
+            }
+        }
+        
+        // 内容列表
+        .tacketList{
+            .listTitle{
+                width: rem(375);
+                height: rem(30);
+                line-height: rem(30);
+                padding: rem(0) rem(10);
+                i{
+                    float: left;
+                    display: block;
+                    width: rem(4);
+                    height: rem(16);
+                    background: red;
+                    margin: rem(7) rem(0);
+                }
+                h3{
+                    float: left;
+                    font-size: rem(14); 
+                    margin-left: rem(5);
+                }
+            }
+            .listInfo{
+                ul{
+                    width: rem(375);
+                    height: rem(110);
+                    padding: rem(10) rem(10);
+                    li{
+                        width: rem(355);
+                        height: rem(90);
+                        img{
+                            width: rem(63);
+                            height: rem(88);
+                        }
+                        .info{
+                            width: rem(277);
+                            height: rem(110);
+                            margin-left: rem(15);
+                            position: relative;
+                            h4{
+                                font-size: rem(16);
+                                margin-bottom: rem(5);
+                            }
+                            p{
+                                font-size: rem(14);
+                                color: #999;
+                                line-height: rem(20);
+                            }
+                            .disc{
+                                font-size: rem(14);
+                                color:red;
+                                position: absolute;
+                                right: rem(10);
+                                bottom: rem(25);
+                            }
+                        }
+        
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,66 @@
+
+@import './common.scss';
+@function rem($val) {
+    @return $val/37.5 + rem
+}
+
+.search{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .searchHeader{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        width: rem(375);
+        height: rem(50);
+        line-height:  rem(50);
+        font-size: rem(18);
+        background: #4271e0;
+        display: flex;
+        justify-content: space-between;
+        .iconNav,.iconLeft{
+            float: left; 
+            width: rem(40);
+            height: rem(40);
+            text-align: center;
+            color:#a2b9f0;  
+        }
+        .headerTitle{
+            width: rem(270);
+            color:#fff;
+            span{
+                font-size: rem(16); 
+                margin-left: rem(5); 
+            }
+        }
+    }
+    .searchPage{
+        width: rem(375);
+        height: rem(54);
+        margin-top: rem(50);
+        line-height: rem(54);
+        text-align: center;
+        input{
+            width: rem(266);
+            height: rem(34);
+            padding: 0 rem(5);
+            border-radius: rem(5);
+            
+        }
+        button{
+            width: rem(64);
+            height: rem(45);
+            margin-left: rem(20);
+            background-color:transparent;
+        }
+    }
+    .searchList{
+        flex:1;
+        width: rem(375); 
+        height: 100%; 
+        background: #fff; 
+        overflow: hidden;
+    }
+}
